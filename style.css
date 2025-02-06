@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background-color: beige;
+}
+.container{
+    background-color: bisque;
+    width: 600px;
+    margin: 50px auto;
+    padding: 3rem;
+}
+h1{
+    color: darkmagenta;
+    text-align: center;
+}
+.colorBox{
+    max-width: 8rem;
+    height: 5rem;
+    padding-top: 2rem;
+    background-color: red;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 8px;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+.gridColor{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.8rem 1.5rem;
+}
+.btn{
+    height: 2rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.status{
+    color: black;
+    text-align: center;
+}
+h2{
+    color: black;
+}
+.newGame{
+    background-color: darkmagenta;
+    color: white;
+    width: 6rem;
+    border: 2px solid gray;
+    font-weight: 700;
+    height: 2rem;
+    margin: 5px auto;
+    border: 1px solid gray;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .container{
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding-top: 5rem;
+    }
+}
