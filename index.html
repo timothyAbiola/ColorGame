@@ -8,12 +8,18 @@
   </head>
   <body>
     <div class="container">
-      <h1>Click A Button To Correctly Guess The color In The Box</h1>
-      <div class="colorBox" id="colorBox">Guess The Color</div>
-      <p id="gameStatus" class="status" data-testid="gameStatus">fff</p>
-      <h2>Score: <span id="score">0</span></h2>
+      <h1 data-testid="gameInstructions">
+        Click A Button To Correctly Guess The color In The Box
+      </h1>
+      <div class="colorBox" id="colorBox" data-testid="colorBox">
+        Guess The Color
+      </div>
+      <p id="gameStatus" class="status" data-testid="gameStatus"></p>
+      <h2>Score: <span id="score" data-testid="score">0</span></h2>
       <div class="gridColor" id="gridColor"></div>
-      <button class="newGame" id="newGame">New Game</button>
+      <button class="newGame" id="newGame" data-testid="newGameButton">
+        New Game
+      </button>
     </div>
     <script src="script.js"></script>
   </body>
